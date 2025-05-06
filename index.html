@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+           margin: auto;
+           width: 80%;
+           border: 3px solid #eeeeee;
+           padding: 10px;
+           font-size: 14px;
+           font-family: Arial, Helvetica, sans-serif;
+           color: #302f2f;
+
+        }
+        .flex-container{
+            display:flex;
+            width: 100%;
+        }
+        .name{
+            width: 80%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .img-profile{
+            padding: 10px;
+            width: 20%;
+            justify-content: flex-end;
+            background-color:  #f1f1f1;
+        }
+        .header{
+            font-size:40px;
+            font-weight: 600px;
+        }
+        
+        .sub-header{
+            font-size:18px;
+            font-weight: 400px;
+        }
+        .title{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size:18px;
+            font-weight: 500px;
+            color: #1d1d1d;
+        }
+        .title:hover{
+            font-size:18px;
+            text-decoration: underline;
+            cursor: pointer;
+            color: #01291d;
+            text-decoration-color: #01291d;
+            transition: 1300ms;
+        }
+        .title::after {
+            content: '';
+            width: 0px;
+            height: 1px;
+            display: block;
+            background: black;
+            transition: 300ms;
+            }
+        .sub-title{
+            padding-bottom: 4px;
+            font-size:14px;
+            font-weight: 500px;
+            color: #383838;
+        }
+        .content-left{
+            margin-top: 20px;
+            width: 50%;
+            padding: 10px;
+            background-color: #ffffff;
+            border-right: #696868 1px solid;
+        }
+        .text-primary{
+            color: #6e6e6e;
+        }
+        .content-right{
+            margin-top: 20px;
+            width: 50%;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        .mb-2{
+            margin-bottom: 12px;
+        }
+        .mb-4{
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+          <div class="flex-container">
+            <div class="img-profile">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQGWvMwIpsmxZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1674888236273?e=1751500800&v=beta&t=t95i36Nj3bxl9WmX0PvzHMfDpX5mAmsNvxingzydwfw" alt="" srcset="" width="250px" style="border-radius: 10px;">
+            </div>
+            <div class="name">
+                <div class="header"><b>AJI SUKMO</b></div>
+                <div class="sub-header">WEB DEVELOPER</div>
+            </div>
+           
+        </div>
+
+        <div class="flex-container">
+            <div class="content-left flex" >
+                <div class="title"><b>CONTACT PERSON</b></div>
+                <div><b>No Hp :</b> 085158134776</div>
+                <div><b>Email :</b> ajisuk31@gmail.com</div>
+                <div><b>Alamat :</b> Polengan, Bokoharjo, Prambanan, Sleman, Yogyakarta</div>
+            </div>
+            <div class="content-right flex"> 
+                <div class="title"><b>PROFILE</b></div>
+                <div>I am a qualified and professional web developer with two years of
+                        experience in database administration and website development. I like
+                        learning new technologies to keep improving my skills and like to
+                        motivate myself to achieve targets and goals.
+                </div>
+        </div>
+        </div>
+
+        <div class="flex-container mt-2" style="border-top: 1px solid #696868;; margin-top: 10px;">
+            <div class="content-left">
+                <div class="title"><b>SKILLS</b></div>
+                    <span> &#9642; PHP Laravel  <br></span> 
+                    <span> &#9642; Javascript Vue Js <br></span> 
+                    <span> &#9642; Docker, Mysql & Elastic Search, <br></span>
+                    <span> &#9642; Bootstrap & Talwind <br></span> 
+                    <span> &#9642; Adobe Photoshop, Figma <br></span>
+                    <span> &#9642; MS Office, Trello, Clickup <br></span>
+                    <span> &#9642; Git Version Control, Etc <br></span>
+                <br>
+                <div class="title"><b>EDUCATION</b></div>
+                <div><b class="sub-title">UNIVERSITAS TEKNOLOGI YOGYAKARTA</b> <br> S1 Sistem Informasi <br>2013 - 2019 </div> <br>
+                <div><b class="sub-title">SMK MUDA PATRIA KALASAN</b> <br> Elektronika Industri <br> 2009 - 2012 </div>
+            </div>
+            <div class="content-right"> 
+                <div class="title"><b>EXPERIENCE</b></div>
+                <div class="mb-2">
+                    <b class="sub-title">WEB DEVELOPER</b> <br>
+                    <span class="text-primary">&#9642; Xyber | 2021 - </span><br>
+                     Create Dashboard Monitoring Report Agent <br>
+                     Create Dashboard Analysis<br>
+                     Create Dashboard Visual Surveillance
+                </div>
+                <div class="mb-2">
+                   <b class="sub-title">PHP DEVELOPER</b> <br>
+                   <span class="text-primary">&#9642; Rampaksuar.id | 2020 - 2021</span>
+                     <br>
+                    Build Website Company Profile B2B Seimangkiez <br>
+                    Create Website Reporting Anggota Fraksi Komisi IV DPR <br>
+                    Create Web CRM
+                    <br>
+                    <br>
+                    <b class="sub-title">WEB DEVELOPER & DIGITAL MARKETING</b> <br>
+                    <span class="text-primary">&#9642; 337 Creative Jogja Konfeksi |
+                    2019 - 2019 </span><br>
+                    Create Web Company Profile and Helping Digital Marketing
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
