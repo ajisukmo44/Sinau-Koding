@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Hitung Tarif Parkir</h1> 
+   <span>Tugas week 2 : <br>
+Buatlah sebuah object bernama kendaraan teridiri dari value nopol, warna, jenis (mobil/motor), lamaParkir.
+Buatlah sebuah kondisional jika motor akan dikenakan tarif 3000 untuk 1 jam pertama dan 2000 untuk perjam selanjutnya. 
+Jika mobil akan dikenakan tarif 7000 untuk 1 jam pertama dan 5000 untuk perjam selanjutnya. 
+Tampilkan biaya parkir yang harus dibayar juga implementasikan looping dalam perhitungan tarif nya.</span> 
+</body>
+<script>
+    const kendaraan = [{ 'nopol' : 'AB 1111 YK', 'warna' : 'hitam', 'jenis' : 'mobil', 'lamaParkir':1}, { 'nopol' : 'AB 2222 SLM', 'warna' : 'putih', 'jenis' : 'mobil', 'lamaParkir': 4},  { 'nopol' : 'B 777 KL', 'warna' : 'Hitam', 'jenis' : 'motor', 'lamaParkir': 1}, { 'nopol' : 'AD 666 KL', 'warna' : 'ungu', 'jenis' : 'motor', 'lamaParkir': 2}]
+    const tarifParkirMotor = 3000;
+    const tarifParkirMobil = 7000;
+    const bayarParkir = 0;
+
+    // perulangan hitung tarif kendaraan
+    kendaraan.forEach(item => {
+        if(item.jenis == 'mobil'){
+            if(item.lamaParkir > 1 ){
+                this.bayarParkir = tarifParkirMobil + (5000*(item.lamaParkir-1));
+                console.log(`Tarif parkir mobil ${item.nopol} selama ${item.lamaParkir} jam adalah : `+ this.bayarParkir ); 
+            } else {
+                this.bayarParkir = tarifParkirMobil;
+                console.log(`Tarif parkir mobil ${item.nopol} selama ${item.lamaParkir} jam adalah : `+ this.bayarParkir ); 
+            }
+        } else if (item.jenis == 'motor'){
+            if(item.lamaParkir > 1 ){
+                this.bayarParkir = tarifParkirMotor + (2000*(item.lamaParkir-1));
+                console.log(`Tarif parkir motor ${item.nopol} selama ${item.lamaParkir} jam adalah : `+ this.bayarParkir ); 
+            } else {
+                this.bayarParkir = tarifParkirMotor;
+                console.log(`Tarif parkir motor ${item.nopol} selama ${item.lamaParkir} jam adalah : `+ this.bayarParkir ); 
+            }
+        }
+    });
+</script>
+</html>
